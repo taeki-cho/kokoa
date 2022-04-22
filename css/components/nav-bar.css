@@ -7,6 +7,9 @@
     box-sizing: border-box;
     border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
+/*
+* box-sizing: border-box; => padding 을 줘도 WIDTH 사이즈를 늘리지 않고 PADDING 을 포함한다.
+*/
 
 .nav__list {
     display: flex;
@@ -15,4 +18,20 @@
 
 .nav__link {
     color: #2e363e;
+    position: relative;
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 15px;
+    bottom: 15px
 }
